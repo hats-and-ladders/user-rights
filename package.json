@@ -1,0 +1,10 @@
+{
+  "name": "user-rights",
+  "version": "1.0.0",
+  "description": "This repo should contain two things. First, create a file that contains a list of user rights for the system.  It should be a map of rights constants to rights data structures that contain a name for the right and its bit flag. Second, write a function in Javascript that checks the supplied JWT against a supplied right to see if the user has that right.",
+  "scripts": {
+    "test": "hecks the supplied JWT against a supplied right to see if the user has that right."
+  },
+  "author": "hnl_team",
+  "license": "ISC"
+}
