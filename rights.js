@@ -15,4 +15,4 @@ const allRights = {
   "MANAGE_PROVIDER_USERS": { "name": "View Reports", "flag": 64 },// index is 6
   "INVITE_PROVIDER_USERS": { "name": "View Reports", "flag": 128 }// index is 7
 }
-export default allRights;
+exports.allRights = allRights;
