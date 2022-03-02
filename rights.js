@@ -6,13 +6,13 @@
  */
 
 const allRights = {
-  "VIEW_USERS": { "name": "View Users", "flag": 1 }, // index is 0
-  "MANAGE_USERS": { "name": "Edit Users", "flag": 2 }, // index is 1
+  "VIEW_USERS": { "name": "View Users", "flag": 1 }, // index is 0 ie. Math.pow(2,0)
+  "MANAGE_USERS": { "name": "Manage Users", "flag": 2 }, // index is 1
   "MANAGE_ROLES": { "name": "Manage Roles", "flag": 4 }, // index is 2
   "ASSIGN_RIGHTS": { "name": "Assign Rights", "flag": 8 },// index is 3
   "VIEW_REPORTS": { "name": "View Reports", "flag": 16 },// index is 4
   "CAN_IMPERSONATE": { "name": "Can Impersonate", "flag": 32 },// index is 5
-  "MANAGE_PROVIDER_USERS": { "name": "View Reports", "flag": 64 },// index is 6
-  "INVITE_PROVIDER_USERS": { "name": "View Reports", "flag": 128 }// index is 7
+  "MANAGE_PROVIDER_USERS": { "name": "Manage Provider Users", "flag": 64 },// index is 6
+  "INVITE_PROVIDER_USERS": { "name": "Invite Provider Users", "flag": 128 }// index is 7
 }
 exports.allRights = allRights;
