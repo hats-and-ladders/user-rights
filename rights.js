@@ -1,7 +1,7 @@
 
 /**
  * This is a collection of user rights. Every right has a name and a flag.
- * `name` must not be too long. It should always be unique and length must be less than equals 16.
+ * `name` must not be too long. It should always be unique and length must be less than equals 25.
  * `flag` is a bitfield that represents the right. Flag must be unique and is equivalent to Math.pow(2, key); where key is the index of the right in the object list.
  */
 
