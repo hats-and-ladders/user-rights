@@ -1,5 +1,4 @@
-
-import allRights from "./rights";
+const allRightsParentObject = require('./rights')
 
 /**
  * Check if user has right or not.
@@ -10,7 +9,11 @@ import allRights from "./rights";
  */
 const hasRight = (token, userRightToCheck) => {
   console.log(token, userRightToCheck)
-  return (allRights[userRightToCheck].flag & token.userRightsBits) === allRights[userRightToCheck].flag
+  const allRights = allRightsParentObject.allRights
+  return (
+    (allRights[userRightToCheck].flag & token.userRightsBits) ==
+    allRights[userRightToCheck].flag
+  )
 }
 
-export { allRights, hasRight }
+module.exports = { allRights: allRightsParentObject, hasRight }
