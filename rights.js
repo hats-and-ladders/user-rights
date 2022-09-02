@@ -19,28 +19,24 @@
     name: 'Manage Roles',
     flag: 4, // index is 2
   },
-  ASSIGN_RIGHTS: {
-    name: 'Assign Rights',
-    flag: 8, // index is 3
-  },
   VIEW_REPORTS: {
     name: 'View Reports',
-    flag: 16, // index is 4
+    flag: 8, // index is 3
   },
   CAN_IMPERSONATE: {
     name: 'Can Impersonate',
-    flag: 32, // index is 5
+    flag: 16, // index is 4
   },
   MANAGE_PROVIDER_USERS: {
     name: 'Manage Provider Users',
-    flag: 64, // index is 6
+    flag: 32, // index is 5
   },
   INVITE_PROVIDER_USERS: {
     name: 'Invite Provider Users',
-    flag: 128, // index is 7
+    flag: 64, // index is 6
   },
   USER_TECH_DETAILS: {
     name: 'User Tech Details',
-    flag: 256, // index is 8
+    flag: 128, // index is 7
   },
 };
