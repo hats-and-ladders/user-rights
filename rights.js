@@ -39,4 +39,8 @@
     name: 'User Tech Details',
     flag: 128, // index is 7
   },
+  DEV_TOOLS: {
+    name: 'Dev Tools',
+    flag: 256, // index is 8
+  },
 };
