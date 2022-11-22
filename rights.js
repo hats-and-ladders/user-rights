@@ -43,4 +43,12 @@
     name: 'Dev Tools',
     flag: 256, // index is 8
   },
+  CUSTOMER_HOME: {
+    name: 'Customer Home',
+    flag: 512, // index is 9
+  },
+  HNL_HOME: {
+    name: 'H&L Home',
+    flag: 1024, // index is 10
+  },
 };
