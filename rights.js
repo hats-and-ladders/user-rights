@@ -51,4 +51,12 @@
     name: 'H&L Home',
     flag: 1024, // index is 10
   },
+  VIEW_GROUPS: {
+    name: 'View Groups',
+    flag: 2048, // index is 11
+  },
+  EDIT_GROUPS: {
+    name: 'Edit Groups',
+    flag: 4096, // index is 12
+  },
 };
