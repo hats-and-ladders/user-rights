@@ -59,4 +59,24 @@
     name: 'Edit Groups',
     flag: 4096, // index is 12
   },
+  HARD_DELETE: {
+    name: 'Hard Delete',
+    flag: 8192, // index is 13
+  },
+  TEST_RIGHT: {
+    name: 'Test',
+    flag: 16384, // index is 14
+  },
+  CUSTOMER_REPORTS: {
+    name: 'Customer Reports',
+    flag: 32768, // index is 15
+  },
+  INTERNAL_REPORTS: {
+    name: 'Internal Reports',
+    flag: 65536, // index is 16
+  },
+  VIEW_ALL_GROUPS: {
+    name: 'View All Groups',
+    flag: 131072, // index is 17
+  },
 };
