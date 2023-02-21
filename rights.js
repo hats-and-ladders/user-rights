@@ -20,7 +20,7 @@
     flag: 4, // index is 2
   },
   VIEW_ROLES: { // The ability to view roles
-    name: 'View Reports',
+    name: 'View Roles',
     flag: 8, // index is 3
   },
   CAN_IMPERSONATE: { // ability for an H&L to simulate the account of an end user for troubleshooting purposes
