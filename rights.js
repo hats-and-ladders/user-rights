@@ -19,7 +19,7 @@
     name: 'Manage Roles',
     flag: 4, // index is 2
   },
-  VIEW_REPORTS: { // RECLAIM
+  VIEW_ROLES: { // The ability to view roles
     name: 'View Reports',
     flag: 8, // index is 3
   },
