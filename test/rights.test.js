@@ -1,6 +1,6 @@
 //const sinon = require('sinon');
 const { allRights } = require("../rights");
-const { hasRight } = require("../index");
+const { hasRight, enumerateRights } = require("../index");
 const expect = require('chai').expect;
 
 var userRights;
@@ -24,7 +24,17 @@ describe('Check If Token Has Right',() => {
   })
 
   it('should fail when missing in an array of rights', async() => {
-    expect(hasRight(userRights, allRights.MANAGE_PROVIDER_USERS.flag + allRights.VIEW_REPORTS.flag)).to.equal(false)
+    expect(hasRight(userRights, allRights.MANAGE_PROVIDER_USERS.flag + allRights.PURGE_USERS.flag)).to.equal(false)
+  })
+
+})
+
+describe('enumerateRights',() => {
+
+  it('should return the list of rights represented by the token bits 8206', async() => {
+    result = enumerateRights(8206)
+    expected = [ allRights.MANAGE_USERS, allRights.MANAGE_ROLES, allRights.VIEW_ROLES, allRights.PURGE_USERS ]
+    expect(JSON.stringify(result)).to.equal(JSON.stringify(expected))
   })
 
 })
