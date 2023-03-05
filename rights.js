@@ -59,8 +59,8 @@
     name: 'Edit Groups',
     flag: 4096, // index is 12
   },
-  HARD_DELETE: { // ability to hard delete data in the system normally soft-deleted
-    name: 'Hard Delete',
+  PURGE_USERS: { // ability to hard delete users in the system normally soft-deleted
+    name: 'Purge Users',
     flag: 8192, // index is 13
   },
   TEST_RIGHT: { // right that does nothing, exists for test purposes
