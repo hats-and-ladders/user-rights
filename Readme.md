@@ -32,3 +32,11 @@ To pass the user's rights you must first decode their authentication token and t
 ```
 hasRight = (userRightsBits, allRights.VIEW_USERS.flag)
 ```
+
+## Check a Rights Field
+
+An authorization token delivers an integer containing all the bits representing the rights a user has, the union of the rights from all their roles.  When troubleshooting it may be useful to decipher one of these bit fields to discern which rights have been granted.  This module contains a utility to do that. To call from the command line call this from the project root.
+
+```
+node -e 'require("./index").printRights(14478)'
+```
