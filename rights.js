@@ -79,4 +79,8 @@
     name: 'View All Groups',
     flag: 131072, // index is 17
   },
+   VIEW_OWN_GROUPS: { // allows the a user to fetch only their own groups from user/{clientid}/groups
+     name: 'View Own Groups',
+     flag: 262144, // index is 18
+   },
 };
