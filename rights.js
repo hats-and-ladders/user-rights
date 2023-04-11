@@ -79,8 +79,16 @@
     name: 'View All Groups',
     flag: 131072, // index is 17
   },
-   VIEW_OWN_GROUPS: { // allows the a user to fetch only their own groups from user/{clientid}/groups
-     name: 'View Own Groups',
-     flag: 262144, // index is 18
-   },
+  VIEW_OWN_GROUPS: { // allows the user to fetch only their own groups from user/{clientid}/groups
+    name: 'View Own Groups',
+    flag: 262144, // index is 18
+  },
+  MANAGE_CUSTOMERS: { // allows the user to create and edit customers
+    name: 'Manage Customers',
+    flag: 524288, // index is 19
+  },
+  VIEW_CUSTOMERS: { // allows the user to view customers systemwide
+    name: 'View Customers',
+    flag: 1048576, // index is 20
+  },
 };
