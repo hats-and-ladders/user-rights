@@ -91,4 +91,12 @@
     name: 'View Customers',
     flag: 1048576, // index is 20
   },
+  MANAGE_PROGRAMS: { // allows the user to create and edit programs
+    name: 'Manage Programs',
+    flag: 2097152, // index is 21
+  },
+  VIEW_PROGRAMS: { // allows the user to view programs
+    name: 'View Programs',
+    flag: 4194304, // index is 22
+  },
 };
