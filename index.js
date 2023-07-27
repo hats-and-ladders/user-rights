@@ -1,4 +1,4 @@
-const allRightsParentObject = require('./rights')
+const allRights = require('./rights')
 
 /**
  * Check if user has right or not.
@@ -20,13 +20,13 @@ const hasRight = (token, rightToCheck) => {
  */
 const enumerateRights = (token) => {
   const matched = []
-  for (var key in allRightsParentObject.allRights) {
-    const right = allRightsParentObject.allRights[key];
+  for (const key in allRights) {
+    const right = allRights[key]
     if (right.flag & token) {
       matched.push(right)
     }
   }
-  return matched;
+  return matched
 }
 
 /**
@@ -36,9 +36,22 @@ const enumerateRights = (token) => {
  */
 const printRights = (token) => {
   const rights = enumerateRights(token)
-  for (let right of rights) {
+  for (const right of rights) {
     console.log(`${right.name}`)
   }
 }
 
-module.exports = { allRights: allRightsParentObject, hasRight, enumerateRights, printRights }
+const userRights = {
+  allRights,
+  enumerateRights,
+  hasRight,
+  printRights,
+}
+
+module.exports.allRights = allRights
+module.exports.enumerateRights = enumerateRights
+module.exports.hasRight = hasRight
+module.exports.printRights = printRights
+
+// default named export
+module.exports.userRights = userRights

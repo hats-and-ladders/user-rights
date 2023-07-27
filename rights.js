@@ -1,4 +1,3 @@
-
 /**
  * This is a collection of user rights. Every right has a name and a flag.
  * `name` must not be too long. It should always be unique and length must be less than equals 16.
@@ -6,7 +5,7 @@
  * Math.pow(2, key); where key is the index of the right in the object list.
  */
 
- exports.allRights = {
+const allRights = {
   VIEW_USERS: { // ability to see users in the admin screens and API access to r/o user info
     name: 'View Users',
     flag: 1, // index is 0 ie. Math.pow(2,0)
@@ -99,4 +98,6 @@
     name: 'View Programs',
     flag: 4194304, // index is 22
   },
-};
+}
+
+module.exports = allRights
