@@ -1,4 +1,9 @@
-# Installing NPM Token
+# NPM INSTALL
+
+NPM install requires access to the Hats & Ladders' Github repository where the project exists. With Github access to the repo via https or ssh, `npm install` should work normally.
+
+
+# Installing NPM Token (DEPRECATED)
 
 An NPM token is required for use fo this module as it is a private organization scoped module and not available to the general public.
 
