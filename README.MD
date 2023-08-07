@@ -2,6 +2,23 @@
 
 NPM install requires access to the Hats & Ladders' Github repository where the project exists. With Github access to the repo via https or ssh, `npm install` should work normally.
 
+Private node module from Github is installed like this:
+
+```
+npm install @hats-and-ladders/user-rights
+```
+
+Make sure you are using `Node 14.18.2` & `NPM v8.4.1`. You should see in the package.json an entry like this:
+
+```
+"user-rights": "github:hats-and-ladders/user-rights",
+```
+
+To use this private module, refer to it in your code like this:
+```
+const { allRights } = require('@hats-and-ladders/user-rights');
+```
+
 # Use on server and client
 This module is based on a clone of
 https://matthew-brett.github.io/curious-git/git_submodules.html
