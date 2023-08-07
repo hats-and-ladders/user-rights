@@ -1,24 +1,9 @@
-# NPM INSTALL
+# npm install
 
 NPM install requires access to the Hats & Ladders' Github repository where the project exists. With Github access to the repo via https or ssh, `npm install` should work normally.
 
-
-# Installing NPM Token (DEPRECATED)
-
-An NPM token is required for use fo this module as it is a private organization scoped module and not available to the general public.
-
-For the target app or server to use this module a token can be added via a `.npmrc` file in the root user $USER folder (~/.npmrc) with this signature:
-```
-//registry.npmjs.org/:_authToken=XXXXXXXXXXXXXXX
-```
-
-Furthermore, we can create and keep a generic token and place this inside of a .env file for each use with the correct token placed under the exported globl of `NPM_CONFIG_TOKEN`.
-
-Please refer to: https://docs.npmjs.com/using-private-packages-in-a-ci-cd-workflow OR https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry
-
-# Submodules for server and client. (DEPRECATED)
-(DEPRECATED)
-This is an independent submodule repo that both the client and server repo can use according to the following instructions:
+# Use on server and client
+This module is based on a clone of
 https://matthew-brett.github.io/curious-git/git_submodules.html
 
 This repo contains two things.
