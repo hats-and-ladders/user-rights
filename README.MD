@@ -39,7 +39,9 @@ It is the authoritative list of rights in the Hats & Ladders system.  Rights can
 
 Add new right at last with respective `name` and `flag`.
 - `name`: It should not be long enough and string length must be <=16.  It must be unique.
-- `flag`: It is the respective bitvalue and should be unique and must be `Math.pow(2,key)` where `key` is the index of your right.
+- `flag`: It is the respective bitvalue and should be unique and must be `Math.pow(2,key)` where `key` is the index of your right.  The value must be 2x of the value before it.
+
+Changes to the rights file should prompt a bump of the minor version in order to cause those changes to be picked up by npm lib consumers.
 
 ## Use a right in code
 This project has been made a submodule of the client and server projects and can be referenced there.  To use it, import as you would any other library.

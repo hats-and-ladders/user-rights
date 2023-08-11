@@ -98,6 +98,26 @@ const allRights = {
     name: 'View Programs',
     flag: 4194304, // index is 22
   },
+  MANAGE_GROUPS: { // allows the user to manage groups
+    name: 'Manage Groups',
+    flag: 8388608, // index is 23
+  },
+  VIEW_ROSTER_MODULES: { // allows the user to view roster modules
+    name: 'View Roster Modules',
+    flag: 16777216, // index is 24
+  },
+  MANAGE_ROSTER_MODULES: { // allows the user to manage roster modules
+    name: 'Manage Roster Modules',
+    flag: 33554432, // index is 25
+  },
+  VIEW_ROSTERIZERS: { // allows the user to view rosterizers
+    name: 'View Rosterizers',
+    flag: 67108864, // index is 26
+  },
+  MANAGE_ROSTERIZERS: { // allows the user to manage rosterizers
+    name: 'Manage Rosterizers',
+    flag: 134217728, // index is 27
+  },
 }
 
 module.exports = allRights
