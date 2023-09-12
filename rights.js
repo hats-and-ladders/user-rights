@@ -118,6 +118,14 @@ const allRights = {
     name: 'Manage Rosterizers',
     flag: 134217728, // index is 27
   },
+  VIEW_CONTENT_PACKAGES: { // allows the user to view content packages
+    name: 'View Content Packages',
+    flag: 268435456, // index is 28
+  },
+  VIEW_TASK_PACKAGES: { // allows the user to view task packages
+    name: 'View Task Packages',
+    flag: 536870912, // index is 29
+  },
 }
 
 module.exports = allRights
